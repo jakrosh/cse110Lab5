@@ -13,12 +13,13 @@ public class Fahrenheit extends Temperature
 
     @Override
     public Temperature toFahrenheit() {
-        return new Fahrenheit(getValue());
+        return this;
     }
 
     public String toString()
     {
-        // TODO: Complete this method
-        return "";
+        String beginning = "" + getValue();
+        String ending = " F";
+        return beginning + ending;
     }
 }
